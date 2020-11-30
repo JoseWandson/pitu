@@ -2,7 +2,7 @@ import baseAPI from './api';
 
 class ShorternerService {
     constructor() {
-        this.api = baseAPI('http://localhost:3001/');
+        this.api = baseAPI(process.env.REACT_APP_API);
     }
 
     async getLink(code) {
